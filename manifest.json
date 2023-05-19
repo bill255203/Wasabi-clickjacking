@@ -1,0 +1,15 @@
+{
+  "name": "Clickjacking Prevention Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "This extension prevents clickjacking attempts on webpages.",
+  "icons": {
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
